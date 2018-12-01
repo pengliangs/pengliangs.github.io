@@ -1,0 +1,11 @@
+<card>
+    <div class="title">
+        <i>
+            <icon size="24" type="md-bookmarks"/>
+        </i>
+        <span>推荐书单</span>
+    </div>
+    <div>
+        <div v-for="item in books"><a :href="item.buyLink" v-text="item.bookName"></a></div>
+    </div>
+</card>

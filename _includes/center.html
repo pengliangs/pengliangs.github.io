@@ -1,0 +1,52 @@
+<div class="center">
+    {%- if site.posts.size > 0 -%}
+    {%- for post in site.posts -%}
+    <div class="card-item" v-show="filterDoc('{{ post.tags | join: ',' }}')">
+        <card>
+            <div class="doc-title">
+                <h1><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h1>
+            </div>
+            <div class="doc-comment">
+                <div>
+                    {%- if post.articleType == 0 -%}
+                    <tag color="success">原创</tag>
+                    {%- endif -%}
+                    {%- if post.articleType == 1 -%}
+                    <tag color="warning">转载</tag>
+                    {%- endif -%}
+                </div>
+                <div>
+                    <i>
+                        <icon size="24" type="md-calendar"/>
+                    </i>
+                    <span>{{ post.date | date: "%Y-%m-%d" }}</span>
+                </div>
+                <div>
+                    <i>
+                        <icon size="24" type="md-person"/>
+                    </i>
+                    <span>{{ post.author | default: "未定义" }}</span>
+                </div>
+                <div>
+                    <i>
+                        <icon size="24" type="md-folder"/>
+                    </i>
+                    <span>{{ post.categories | default: "暂无分类" }}</span>
+                </div>
+            </div>
+            <div class="doc-content">
+                {{ post.excerpt | strip_html}}
+            </div>
+            <div class="doc-tag">
+                {%- if post.tags -%}
+                {%- for tag in post.tags -%}
+                <tag>{{ tag }}</tag>
+                {%- endfor -%}
+                {%- endif -%}
+            </div>
+
+        </card>
+    </div>
+    {%- endfor -%}
+    {%- endif -%}
+</div>

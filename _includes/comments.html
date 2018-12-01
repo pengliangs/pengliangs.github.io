@@ -1,0 +1,21 @@
+{% if site.comments.enable %}
+<link rel="stylesheet" href="/assets/gitalk/gitalk.css">
+<script src="/assets/crypto-js/3.1.9-1/crypto-js.min.js"></script>
+<script src="/assets/gitalk/gitalk.min.js"></script>
+<script>
+    function initGitalk() {
+        var gitalk = new Gitalk({
+            clientID: '{{ site.comments.clientId }}',
+            clientSecret: '{{ site.comments.clientSecret }}',
+            repo: '{{ site.comments.repo }}',
+            owner: '{{ site.comments.owner }}',
+            admin: ['{{ site.comments.owner }}'],
+            id: CryptoJS.MD5('{{ page.title }}').toString(),
+            title:'{{ page.title }}',
+            labels: ['gitalk'],
+            perPage: 50,
+        });
+        gitalk.render('container');
+    }
+</script>
+{% endif %}

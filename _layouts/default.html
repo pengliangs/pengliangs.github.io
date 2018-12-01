@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+
+{%- include head.html -%}
+
+<body>
+<div id="app">
+    <div class="blog-content">
+        {%- include header.html -%}
+
+        {{ content }}
+
+        {%- include footer.html -%}
+    </div>
+</div>
+{%- include comments.html -%}
+</body>
+
+</html>

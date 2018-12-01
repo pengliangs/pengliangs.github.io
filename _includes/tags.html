@@ -1,0 +1,27 @@
+<card>
+    <div class="title">
+        <i>
+            <icon size="24" type="md-bookmarks"/>
+        </i>
+        <span>分类标签</span>
+    </div>
+    <div>
+        {% assign tags = "all" %}
+        {% for post in site.posts %}
+        {% for tag in post.tags %}
+        {% unless tags contains tag %}
+        {% capture tags %}{{ tags }}|{{ tag }}{% endcapture %}
+        {% endunless %}
+        {% endfor %}
+        {% endfor %}
+        {% assign allTags = tags | split: '|' %}
+
+        <ul id="tags">
+            {% for tag in allTags %}
+            <tag @click.native.prevent="activeTagClick({{ forloop.index0 }},'{{ tag }}')" :color="isActiveTag('{{ tag }}') ? 'success' : 'default'" index="{{ forloop.index0 }}" data-rel="{{ tag }}">
+                {{ tag }}
+            </tag>
+            {% endfor %}
+        </ul>
+    </div>
+</card>

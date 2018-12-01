@@ -1,0 +1,47 @@
+<row>
+    <i-col span="24">
+        <div class="header"  style="background-image: url('/assets/images/home-img.jpg')">
+            <div class="top">
+                <row>
+                    <i-col span="12">
+                        <div class="top-left">
+                            <i>
+                                <avatar src="https://avatars1.githubusercontent.com/u/24536767?s=40&v=4"/>
+                            </i>
+                            彭亮的博客
+                        </div>
+                    </i-col>
+                    <i-col span="12">
+                        <div class="top-right">
+                            <tooltip content="GitHub">
+                                <a href="https://github.com/pengliangs">
+                                    <icon style="font-size: 32px" type="logo-github"/>
+                                </a>
+                            </tooltip>
+
+                            <tooltip content="码云">
+                                <a href="https://gitee.com/pl.com/events">
+                                    <icon style="font-size: 32px" type="md-analytics"/>
+                                </a>
+                            </tooltip>
+
+                            <tooltip content="CSDN">
+                                <a href="https://blog.csdn.net/qq_35843477">
+                                    <icon style="font-size: 32px" type="logo-codepen"/>
+                                </a>
+                            </tooltip>
+                        </div>
+                    </i-col>
+                </row>
+            </div>
+            <div class="top-introduce">
+                <div class="title">{{ page.title | default: "彭亮的博客" }}</div>
+                {%- if page.date -%}
+                <div class="comment">发布时间：{{ page.date | date: "%Y-%m-%d" }}</div>
+                {%- else -%}
+                <div class="comment">有些事不是因为看到了希望才去坚持，而是因为坚持才会看到希望</div>
+                {%- endif -%}
+            </div>
+        </div>
+    </i-col>
+</row>

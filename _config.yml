@@ -1,0 +1,45 @@
+title: 彭亮的博客
+email: 1427985322@qq.com
+description: >- # this means to ignore newlines until "baseurl:"#
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+#twitter_username: jekyllrb
+github_username:  pengliang
+
+#port: 80
+# Build settings
+highlighter: rouge
+markdown: kramdown
+kramdown:
+  input: GFM                            # use Github Flavored Markdown !important
+  syntax_highlighter_opts:
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
+
+#theme: minima
+permalink: none
+excerpt_separator: <!--more-->
+plugins:
+  - jekyll-feed
+
+comments:
+  enable: true
+  owner: pengliangs
+  repo: pengliangs.github.io
+  clientId: 494dc1180fe016b795c3
+  clientSecret: 6471db2b58a348a8f493a0641e9e730706c79735
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

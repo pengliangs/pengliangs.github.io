@@ -1,0 +1,169 @@
+body, html {
+    background-color: #f5f8f9;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/**
+  top
+  ------------------------------*/
+.blog-content  .intro-header{
+
+}
+.blog-content .header {
+    width: 100%;
+    position: relative;
+    color: #fff;
+    font-size: 16px;
+    line-height: 30px;
+    cursor: pointer;
+    background: no-repeat center center;
+    background-color: #ccc;
+    background-attachment: scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    margin-bottom: 10px;
+}
+
+.blog-content .header > .top {
+    border-bottom: 1px solid;
+    padding: 10px;
+    font-weight: bold;
+    height: 53px;
+}
+
+.blog-content .header > .top a:hover {
+    color: #e8eaec;
+}
+
+.blog-content .header > .top .top-left {
+    text-align: left;
+}
+
+.blog-content .header > .top .top-right {
+    text-align: right;
+}
+
+.blog-content .header > .top .top-right > div {
+    margin-left: 10px;
+}
+
+.blog-content .header > .top-introduce {
+    text-align: center;
+    padding: 70px 0px;
+}
+
+.blog-content .header > .top-introduce > div {
+    margin: 10px 0px;
+}
+
+.blog-content .header > .top-introduce > .title {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/**
+  common
+  ------------------------------*/
+.body {
+    padding: 10px 20px;
+    color: #4f4f4f;
+    line-height: 30px;
+}
+
+.blog-content .card-item {
+    margin-bottom: 20px;
+}
+
+.blog-content .title {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0px;
+}
+
+/**
+  left
+  ------------------------------*/
+.blog-content .left {
+    border: none;
+}
+
+/**
+  center
+  ------------------------------*/
+.blog-content .center {
+    border: none;
+}
+
+.blog-content .center .doc-title {
+    font-weight: bold;
+    padding: 10px 0px;
+}
+
+.blog-content .center .doc-title a:hover {
+    text-decoration: underline;
+    color: #2d8cf0;
+}
+
+.blog-content .center .doc-comment {
+    margin: 5px 0px;
+}
+
+.blog-content .center .doc-comment > div {
+    float: left;
+    margin-right: 10px;
+}
+
+.blog-content .center .doc-comment:after {
+    content: "";
+    clear: left;
+    display: table;
+}
+
+.blog-content .center .doc-content {
+    border-bottom: 1px solid #e1e1e1;
+    padding: 15px 0px;
+    margin-bottom: 15px;
+}
+
+.blog-content .center .doc-tag {
+    border: none;
+}
+
+/**
+  right
+  ------------------------------*/
+.blog-content .right {
+    border: none;
+}
+
+/**
+  doc content
+  ------------------------------*/
+.post {
+    width: 90%;
+    padding: 20px;
+    margin: auto;
+    line-height: 30px;
+    font-size: 18px;
+}
+
+.post h1,.post h2,.post  h2,.post  h3,.post  h4,.post  h5,.post  h6 {
+
+    margin: 20px 0px;
+
+}
+
+.post h1:before,.post h2:before,.post h2:before,.post h3:before,.post h4:before,.post h5:before,.post h6:before {
+    content:"#";
+    color:#337ab7;
+    margin-right:5px;
+}
