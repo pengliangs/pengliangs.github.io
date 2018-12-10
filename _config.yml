@@ -32,6 +32,10 @@ comments:
   clientId: 494dc1180fe016b795c3
   clientSecret: 6471db2b58a348a8f493a0641e9e730706c79735
 
+
+path:
+  images: ${github.url}/assets/images
+  
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
