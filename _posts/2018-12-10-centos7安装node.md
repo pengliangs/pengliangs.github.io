@@ -17,7 +17,9 @@ gcc gcc-c++
 # gcc -v
 # g++ -v
 ```
-node10.13.0 要求 gcc版本号大于4.9.4否则编译过程中可能会出现 <font color=red>C++ Compiler too old, need g++ 4.9.4 or clang</font>，如果版本过低请参考 [Centos7升级gcc学习笔记](https://www.cnblogs.com/highway-9/p/5628852.html)
+node10.13.0 要求 gcc版本号大于4.9.4否则编译过程中可能会出现 **C++ Compiler too old, need g++ 4.9.4 or clang**，如果版本过低请参考 [Centos7升级gcc学习笔记](https://www.cnblogs.com/highway-9/p/5628852.html)
+
+<!--more-->
 
 ### 2.下载node包
 ```
