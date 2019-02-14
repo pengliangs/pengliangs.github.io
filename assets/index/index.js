@@ -17,7 +17,13 @@ var books = [
         bookName: '解忧杂货店',
         buyLink: '#',
         comment: '描述'
+    },
+    {
+        bookName: '活着',
+        buyLink: '#',
+        comment: '描述'
     }
+
 ]
 window.onload = function () {
     window.mv = new Vue({
