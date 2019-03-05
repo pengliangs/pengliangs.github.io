@@ -7,7 +7,7 @@ author: "彭亮"
 categories: "SpringBoot"
 tags: "SpringBoot"
 ---
-<!--more-->
+
 说起发送邮件我们经常听到SMTP、POP3、IMAP协议 他们在邮件发送过程中都做了些什么了，下面简单的介绍一下
 
 **SMTP：** 简单邮件传输协议 (Simple Mail Transfer Protocol, SMTP) 是在Internet传输email的事实标准。负责底层的邮件系统将邮件从一台机器传至另一台机器 也就是邮件的发送。
