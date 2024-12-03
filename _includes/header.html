@@ -8,7 +8,7 @@
                             <i>
                                 <avatar src="https://avatars1.githubusercontent.com/u/24536767?s=40&v=4"/>
                             </i>
-                           <a href="{{site.github.url | default: '#'}}"> 彭亮的博客 </a>
+                           <a href="{{site.github.url | default: '#'}}">Note</a>
                         </div>
                     </i-col>
                     <i-col span="12">
@@ -18,7 +18,7 @@
                                   <icon style="font-size: 32px" type="logo-github"/>
                                 </a>
                             </tooltip>
-
+                            <!--
                             <tooltip content="码云">
                                 <a href="https://gitee.com/pl.com/events">
                                    <icon style="font-size: 32px" type="md-analytics"/>
@@ -30,12 +30,13 @@
                                    <icon style="font-size: 32px" type="logo-codepen"/>
                                 </a>
                             </tooltip>
+                            -->
                         </div>
                     </i-col>
                 </row>
             </div>
             <div class="top-introduce">
-                <div class="title">{{ page.title | default: "彭亮的博客" }}</div>
+                <div class="title">{{ page.title | default: "Note" }}</div>
                 {%- if page.date -%}
                 <div class="comment">发布时间：{{ page.date | date: "%Y-%m-%d" }}</div>
                 {%- else -%}
